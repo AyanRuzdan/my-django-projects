@@ -19,9 +19,11 @@ from django.urls import path
 from myapp.views import home_view
 from q1.views import q1_view 
 from q2.views import q2_view
+from q3.views import q3_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', home_view),
     path('q1/post/<int:post_id>', q1_view),
-    path('q2/book/<str:book_name>', q2_view)
+    path('q2/book/<str:book_name>', q2_view),
+    path('q3/student/<int:student_id>', q3_view),
 ]
